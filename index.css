@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: rgba(177, 202, 181, 0.5);
@@ -27,9 +32,9 @@ body {
     color:rgb(46, 46, 49);
     font-size: 50px;
   }
-.titleNdescription{
-    align-content:center;
-}
+  .titleNdescription{
+      align-content:center;
+  }
   .product .title {
     margin-top: 0;
     text-align: center;
@@ -40,3 +45,70 @@ body {
     text-align: center;
   }
   
+
+
+  /* contact page  */
+  .contactUs{
+    padding:13% 0px;
+    height:99vh;
+    background-color: rgb(212, 219, 219);
+  }
+  .contactUsText{
+    text-align: center;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: lighter;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+  }
+form{
+  display: grid;
+  justify-content: center;
+}
+  .flex1 input, .flex2 input{
+    width:250px;
+    height:40px;
+    background-color:rgb(212, 219, 219);
+    border:none;
+    border-bottom:1px solid rgb(105, 104, 104);
+  }
+  .flex1 input, .flex2 input::placeholder{
+    font-size: 18px;
+
+  }
+  .flex1{
+    display: flex;
+    gap: 15%;
+    margin-bottom: 30px;
+  }
+  .flex2{
+    display: flex;
+    gap: 15%;
+  }
+  .five .message{
+    background-color:rgb(212, 219, 219);
+    width:115%;
+    resize:none;
+    height: 70px;
+    border:none;
+    border-bottom:1px solid rgb(105, 104, 104);
+  }
+  .message::placeholder{
+    font-size: 24px;
+    padding-left: 10px;
+    padding-top: 25px;
+  }
+  .contactUs .submit{
+    margin:25px 25%;
+    background-color: rgb(0, 10, 10);
+    color: rgba(144, 194, 116, 0.842);
+    width:50%;
+    height:30px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  .contactUs .submit:hover{
+    background-color: #e7e1e1;
+    color:black;
+    border-radius:20px;
+  }
